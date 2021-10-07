@@ -105,6 +105,7 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
     },
     breackpoints:{
         568:{
@@ -119,15 +120,20 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
     grabCursor: true,
     spaceBetween: 48,
     
-    navigation: {
-        nextE1: '.swiper-button-next',
-        prevE1: '.swiper-button-prev',
-    },
+    // navigation: {
+    //     nextE1: '.swiper-button-next',
+    //     prevE1: '.swiper-button-prev',
+    // },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
         dynamicBullets: true,
     },
+    breackpoints:{
+        568:{
+            slidesPerView: 2,
+        }
+    }
 });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
